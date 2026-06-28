@@ -1,40 +1,100 @@
 # 🎵 Spotify Listening History Analyzer
 
-Analyze your Spotify listening history using **Python**, **Pandas**, and **Matplotlib** to uncover listening habits, favorite artists, top songs, and listening patterns through data visualization.
+A Python data analysis project that explores Spotify listening history using Pandas and Matplotlib to uncover listening trends through data visualization.
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
 The Spotify Listening History Analyzer is a beginner-friendly data analysis project that processes Spotify listening history stored in CSV files.
 
-Using **Pandas** for data manipulation and **Matplotlib** for visualization, the project generates insights into personal listening behavior and saves multiple charts that summarize the data.
+Using **Pandas** for data manipulation and **Matplotlib** for visualization, this project transforms raw listening data into meaningful insights through charts and graphs.
 
-This project demonstrates the complete workflow of a simple data analysis project—from loading data and performing exploratory analysis to generating professional visualizations.
+The project demonstrates a complete data analysis workflow:
 
----
-
-## ✨ Features
-
-* 📊 Analyze Spotify listening history
-* 🎤 Identify top artists
-* 🎵 Identify most-played songs
-* ⏭️ Compare skipped vs. completed tracks
-* 📅 Visualize listening activity by day
-* 🕒 Visualize listening activity by hour
-* 💾 Automatically save all charts as PNG images
+- Loading datasets
+- Exploring and cleaning data
+- Performing exploratory data analysis (EDA)
+- Creating visualizations
+- Generating insights from data
 
 ---
 
-## 🛠️ Technologies Used
+# ✨ Features
 
-* Python
-* Pandas
-* Matplotlib
+- 🎤 Top Artists Analysis
+- 🎵 Top Songs Analysis
+- 🕒 Listening Activity by Hour
+- 📅 Listening Activity by Day
+- ⏭️ Skip Analysis
+- 📊 Automatic Chart Generation
+- 💾 Save Visualizations as PNG Images
 
 ---
 
-## 📂 Project Structure
+# 🛠 Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+
+---
+
+# 📂 Dataset
+
+This project uses a publicly available Spotify listening history dataset obtained from Kaggle for educational and data analysis purposes.
+
+The dataset includes information such as:
+
+- Track Name
+- Artist Name
+- Album Name
+- Timestamp
+- Playback Duration
+- Platform
+- Skip Status
+
+Files included in this project:
+
+```text
+data/
+├── spotify_history.csv
+└── spotify_data_dictionary.csv
+```
+
+> **Note:** Although this project uses a Spotify dataset from Kaggle, the same workflow can be applied to a personal Spotify listening history export.
+
+---
+
+# 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ven792/spotify-listening-history-analyzer.git
+```
+
+Navigate into the project:
+
+```bash
+cd spotify-listening-history-analyzer
+```
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the project:
+
+```bash
+python analysis.py
+```
+
+---
+
+# 📁 Project Structure
 
 ```text
 spotify-listening-history-analyzer/
@@ -44,97 +104,141 @@ spotify-listening-history-analyzer/
 │   └── spotify_data_dictionary.csv
 │
 ├── Images/
-│   ├── listening_by_day.png
-│   ├── listening_by_hour.png
-│   ├── skip_analysis.png
 │   ├── top_artists.png
-│   └── top_songs.png
+│   ├── top_songs.png
+│   ├── listening_by_hour.png
+│   ├── listening_by_day.png
+│   └── skip_analysis.png
 │
 ├── analysis.py
 ├── requirements.txt
+├── README.md
 ├── LICENSE
-└── README.md
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Getting Started
+# 📊 Visualizations
 
-### 1. Clone the repository
+## 🎤 Top Artists
 
-```bash
-git clone https://github.com/ven792/spotify-listening-history-analyzer.git
-```
+Displays the artists with the highest number of plays based on the listening history dataset.
 
-### 2. Navigate to the project
+![Top Artists](Images/top_artists.png)
 
-```bash
-cd spotify-listening-history-analyzer
-```
+## 🎵 Top Songs
 
-### 3. Install the required packages
+Highlights the songs that appear most frequently in the listening history.
 
-```bash
-pip install -r requirements.txt
-```
+![Top Songs](Images/top_songs.png)
 
-### 4. Run the project
+## 🕒 Listening Activity by Hour
 
-```bash
-python analysis.py
-```
+Shows the hours of the day when listening activity is highest.
 
----
+![Listening by Hour](Images/listening_by_hour.png)
 
-## 📈 Output
+## 📅 Listening Activity by Day
 
-Running the script generates the following visualizations inside the **Images/** folder:
+Visualizes listening habits across different days of the week.
 
-* Top Artists
-* Top Songs
-* Listening Activity by Day
-* Listening Activity by Hour
-* Skipped vs. Not Skipped Songs
+![Listening by Day](Images/listening_by_day.png)
 
-These charts help visualize listening habits and identify trends in Spotify streaming history.
+## ⏭️ Skip Analysis
+
+Compares skipped tracks with tracks that were played completely.
+
+![Skip Analysis](Images/skip_analysis.png)
 
 ---
 
-## 📚 Skills Demonstrated
+# 💡 Key Insights
+
+The generated visualizations reveal several interesting listening patterns:
+
+- A small number of artists account for a significant portion of total listening activity.
+- Listening behavior varies depending on the time of day.
+- Certain days of the week show higher listening activity than others.
+- Skip analysis helps identify playback behavior and engagement trends.
+
+These insights demonstrate how simple exploratory data analysis can transform raw data into meaningful information.
+
+---
+
+# 🎯 Why This Project?
+
+This project was created to practice the complete data analysis workflow using Python.
+
+It demonstrates how raw data can be:
+
+- Loaded and explored
+- Cleaned and organized
+- Analyzed for trends and patterns
+- Visualized using charts and graphs
+
+Although the project uses a Kaggle dataset, the same techniques can be applied to real-world datasets and personal Spotify listening history exports.
+
+---
+
+# 📚 Skills Demonstrated
 
 This project demonstrates practical experience with:
 
-* Data Analysis
-* Exploratory Data Analysis (EDA)
-* Data Cleaning
-* CSV File Processing
-* Data Visualization
-* Python Programming
-* Pandas
-* Matplotlib
+- Python Programming
+- Data Analysis
+- Exploratory Data Analysis (EDA)
+- Data Cleaning
+- Pandas DataFrames
+- Data Visualization
+- Matplotlib
+- Working with CSV Files
+- Git & GitHub
+- Project Documentation
 
 ---
 
-## 🔮 Future Improvements
+# 📖 What I Learned
 
-Possible future enhancements include:
+While building this project, I learned how to:
 
-* Interactive dashboards with Plotly
-* Streamlit web application
-* Genre analysis
-* Monthly listening trends
-* Spotify Web API integration
-* Additional visualizations and statistics
+- Process real-world datasets using Pandas
+- Explore and clean structured data
+- Create meaningful visualizations with Matplotlib
+- Identify trends and patterns through exploratory data analysis
+- Organize Python projects using a clear folder structure
+- Document projects professionally using Markdown and GitHub
 
 ---
 
-## 📄 License
+# 🚀 Future Improvements
+
+Potential enhancements include:
+
+- Interactive dashboards using Plotly
+- Streamlit web application
+- Spotify Web API integration
+- Genre-based analysis
+- Monthly and yearly listening trends
+- Additional statistical insights
+- Personalized music recommendations
+
+---
+
+# 📄 License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👩‍💻 Author
+# ⭐ Acknowledgements
+
+- Spotify listening history dataset sourced from Kaggle for educational purposes.
+- Built using Python, Pandas, and Matplotlib.
+
+---
+
+# 👩‍💻 Author
 
 **Venya Mongia**
 
