@@ -16,7 +16,6 @@ Python
 Pandas
 Matplotlib
 
-
 Project Structure:
 spotify-listening-history-analyzer/
 │
@@ -34,6 +33,10 @@ spotify-listening-history-analyzer/
 ├── analysis.py
 ├── requirements.txt
 └── README.md
+
+
+
+
 
 Installation:
 git clone https://github.com/ven792/spotify-listening-history-analyzer.git
