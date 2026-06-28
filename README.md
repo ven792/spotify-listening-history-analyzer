@@ -1,141 +1,82 @@
-# spotify-listening-history-analyzer
-Analyze Spotify listening history using Python, Pandas, and Matplotlib.
+Spotify Listening History Analyzer 🎵
+Overview
 
-# 🎵 Spotify Listening History Analyzer
+This project analyzes Spotify listening history using Python, Pandas, and Matplotlib. It processes exported Spotify data to uncover listening habits, identify favorite artists and songs, analyze skipped tracks, and visualize listening patterns.
 
-Analyze Spotify listening history using **Python**, **Pandas**, and **Matplotlib** to discover listening habits, favorite artists, top songs, and playback trends.
+Features
+Analyze Spotify listening history
+Discover top artists
+Discover top songs
+Analyze skipped vs. completed tracks
+Visualize listening trends with charts
+Save all visualizations as PNG images
 
-
-This project analyzes exported Spotify listening history data and transforms it into meaningful insights using data analysis and visualization techniques.
-
-Using **Pandas**, the dataset is cleaned and explored, while **Matplotlib** is used to generate charts that reveal listening behavior over time.
-
- ✨ Features
-
-- 🎧 Top Artists Analysis
-- 🎵 Top Songs Analysis
-- ⏰ Listening Activity by Hour
-- 📅 Listening Activity by Day
-- ⏭️ Skip Analysis
-- 📊 Data Visualization with Matplotlib
-
-🛠 Technologies Used
-
-- Python
-- Pandas
-- Matplotlib
-
- 📂 Dataset
-
-The project uses Spotify listening history exported as CSV files.
+Technologies Used:
+Python
+Pandas
+Matplotlib
 
 
-data/
-├── spotify_history.csv
-└── spotify_data_dictionary.csv
-```
- 🚀 Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/ven792/spotify-listening-history-analyzer.git
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the project
-
-```bash
-python analysis.py
-```
-
-
-
-## 📁 Project Structure
-
-```
+Project Structure:
 spotify-listening-history-analyzer/
 │
-├── Images/
 ├── data/
+│   ├── spotify_history.csv
+│   └── spotify_data_dictionary.csv
+│
+├── Images/
+│   ├── top_artists.png
+│   ├── top_songs.png
+│   ├── skip_analysis.png
+│   ├── listening_by_day.png
+│   └── listening_by_hour.png
+│
 ├── analysis.py
 ├── requirements.txt
-├── README.md
-└── LICENSE
-```
+└── README.md
 
----
+Installation:
+git clone https://github.com/ven792/spotify-listening-history-analyzer.git
 
-# 📊 Results
+cd spotify-listening-history-analyzer
 
-## 🎤 Top Artists
+pip install -r requirements.txt
 
-![Top Artists](Images/top_artists.png)
 
-Displays the artists with the highest number of plays.
+Run the Project
+python analysis.py
 
----
 
-## 🎵 Top Songs
+Output
 
-![Top Songs](Images/top_songs.png)
+The program generates visualizations such as:
 
-Shows the songs listened to most frequently.
+Top Artists
+Top Songs
+Listening Activity by Day
+Listening Activity by Hour
+Skip Analysis
 
----
+All graphs are automatically saved inside the Images folder.
 
-## ⏰ Listening by Hour
 
-![Listening by Hour](Images/listening_by_hour.png)
+Skills Demonstrated:
+-Data Analysis
+-Data Cleaning
+-Data Visualization
+-Python Programming
+-Working with CSV Files
+-Exploratory Data Analysis (EDA)
 
-Visualizes the hours of the day when listening activity is highest.
+Future Improvements:
+-Interactive dashboard using Plotly
+-Streamlit web application
+-Genre analysis
+-Monthly listening trends
+-Spotify API integration
 
----
 
-## 📅 Listening by Day
 
-![Listening by Day](Images/listening_by_day.png)
 
-Shows listening activity across different days of the week.
 
----
 
-## ⏭️ Skip Analysis
-
-![Skip Analysis](Images/skip_analysis.png)
-
-Compares skipped tracks with completed tracks.
-
----
-
-# 📚 What I Learned
-
-Through this project I learned how to:
-
-- Read CSV datasets using Pandas
-- Clean and manipulate data
-- Perform exploratory data analysis
-- Create visualizations using Matplotlib
-- Organize a Python project
-- Document projects using Markdown
-
----
-
-# 🚀 Future Improvements
-
-- Interactive dashboards using Plotly
-- Monthly listening trends
-- Genre analysis
-- Spotify Web API integration
-- Machine Learning recommendations
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
