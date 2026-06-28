@@ -18,6 +18,21 @@ The project demonstrates a complete data analysis workflow:
 - Creating visualizations
 - Generating insights from data
 
+  
+## 📑 Table of Contents
+
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Dataset](#-dataset)
+- [Installation](#-installation)
+- [Project Structure](#-project-structure)
+- [Visualizations](#-visualizations)
+- [Key Insights](#-key-insights)
+- [Why This Project?](#-why-this-project)
+- [Skills Demonstrated](#-skills-demonstrated)
+- [What I Learned](#-what-i-learned)
+- [Future Improvements](#-future-improvements)
+- [License](#-license)
 ---
 
 # ✨ Features
